@@ -101,50 +101,54 @@
             <!-- End Logo and user options section -->
 
             <!-- Navigation -->
-            <nav class="mt-7 border-y-2 border-[#414141] hidden md:block">
-                <div class="container pl-0">
-                     <ul class="menu flex justify-between">
-                         <li class="have-sub-menu categories active">
-                             <a href="#">KATEGORIE <i class="fa-light fa-angle-down"></i></a>
-                             <ul class="sub-menu">
-                                 <li class="have-sub-menu">
-                                     <a href="#"><img width="43" height="30" src="assets/images/icon-rind.webp" srcset="assets/images/icon-rind.webp 2x" alt="">Rind <i class="fa-light fa-angle-right"></i></a>
-                                     <ul class="sub-menu">
-                                         <li><a href="#">Rind</a></li>
-                                         <li><a href="#">Schwein</a></li>
-                                         <li><a href="#">Level 2 Item <i class="fa-light fa-angle-right"></i></a>
-                                             <ul class="sub-menu">
-                                                 <li><a href="#">Level 3 Item</a></li>
-                                                 <li><a href="#">Level 3 Item</a></li>
-                                                 <li><a href="#">Level 3 Item</a></li>
-                                             </ul>
-                                         </li>
-                                         <li><a href="#">Level 2 Item</a></li>
-                                         <li><a href="#">Level 2 Item</a></li>
-                                     </ul>
-                                 </li>
-                                 <li class="have-sub-menu"><a href="#"><img width="43" height="30" src="assets/images/icon-schwein.webp" srcset="assets/images/icon-schwein.webp 2x" alt="">Schwein <i class="fa-light fa-angle-right"></i></a></li>
-                                 <li class="have-sub-menu">
-                                    <a href="#"><img width="43" height="30" src="assets/images/icon-rind.webp" srcset="assets/images/icon-rind.webp 2x" alt="">Rind <i class="fa-light fa-angle-right"></i></a>
-                                    <ul class="sub-menu">
-                                        <li><a href="#">Level 2 Item</a></li>
-                                        <li><a href="#">Level 2 Item</a></li>
-                                        <li><a href="#">Level 2 Item <i class="fa-light fa-angle-right"></i></a>
-                                            <ul class="sub-menu">
-                                                <li><a href="#">Level 3 Item</a></li>
-                                                <li><a href="#">Level 3 Item</a></li>
-                                                <li><a href="#">Level 3 Item</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                 </li>    
-                                 <li><a href="#"><img width="43" height="30" src="assets/images/icon-gef.webp" srcset="assets/images/icon-gef.webp 2x" alt="">Geflügel <i class="fa-light fa-angle-right"></i></a></li>
-                                 <li><a href="#"><img width="43" height="30" src="assets/images/icon-wurstwaren.webp" srcset="assets/images/icon-wurstwaren.webp 2x" alt="">Wurstwaren <i class="fa-light fa-angle-right"></i></a></li>
-                                 <li><a href="#"><img width="43" height="30" src="assets/images/icon-kalb.webp" srcset="assets/images/icon-kalb.webp 2x" alt="">Kalb <i class="fa-light fa-angle-right"></i></a></li>
-                                 <li><a href="#"><img width="43" height="30" src="assets/images/icon-lamm.webp" srcset="assets/images/icon-lamm.webp 2x" alt="">Lamm <i class="fa-light fa-angle-right"></i></a></li>
-                                 <li><a href="#"><img width="43" height="30" src="assets/images/icon-wild.webp" srcset="assets/images/icon-wild.webp 2x" alt="">Wild <i class="fa-light fa-angle-right"></i></a></li>
-                             </ul>
-                         </li>
+            <nav class="mt-7 border-y-2 border-[#414141] hidden relative z-20 md:block">
+                <div class="container pl-0 flex gap-5 lg:gap-10">
+                    <div class="categories-nav">
+                        <ul class="menu flex">
+                            <li class="have-sub-menu categories active">
+                                <div>KATEGORIE <i class="fa-light fa-angle-down"></i></div>
+                                <ul class="sub-menu">
+                                    <li class="have-sub-menu">
+                                        <a href="#"><img width="43" height="30" src="assets/images/icon-rind.webp" srcset="assets/images/icon-rind.webp 2x" alt="">Rind <i class="fa-light fa-angle-right"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Rind</a></li>
+                                            <li><a href="#">Schwein</a></li>
+                                            <li><a href="#">Level 2 Item <i class="fa-light fa-angle-right"></i></a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="#">Level 3 Item</a></li>
+                                                    <li><a href="#">Level 3 Item</a></li>
+                                                    <li><a href="#">Level 3 Item</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Level 2 Item</a></li>
+                                            <li><a href="#">Level 2 Item</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="have-sub-menu"><a href="#"><img width="43" height="30" src="assets/images/icon-schwein.webp" srcset="assets/images/icon-schwein.webp 2x" alt="">Schwein <i class="fa-light fa-angle-right"></i></a></li>
+                                    <li class="have-sub-menu">
+                                       <a href="#"><img width="43" height="30" src="assets/images/icon-rind.webp" srcset="assets/images/icon-rind.webp 2x" alt="">Rind <i class="fa-light fa-angle-right"></i></a>
+                                       <ul class="sub-menu">
+                                           <li><a href="#">Level 2 Item</a></li>
+                                           <li><a href="#">Level 2 Item</a></li>
+                                           <li><a href="#">Level 2 Item <i class="fa-light fa-angle-right"></i></a>
+                                               <ul class="sub-menu">
+                                                   <li><a href="#">Level 3 Item</a></li>
+                                                   <li><a href="#">Level 3 Item</a></li>
+                                                   <li><a href="#">Level 3 Item</a></li>
+                                               </ul>
+                                           </li>
+                                       </ul>
+                                    </li>    
+                                    <li><a href="#"><img width="43" height="30" src="assets/images/icon-gef.webp" srcset="assets/images/icon-gef.webp 2x" alt="">Geflügel <i class="fa-light fa-angle-right"></i></a></li>
+                                    <li><a href="#"><img width="43" height="30" src="assets/images/icon-wurstwaren.webp" srcset="assets/images/icon-wurstwaren.webp 2x" alt="">Wurstwaren <i class="fa-light fa-angle-right"></i></a></li>
+                                    <li><a href="#"><img width="43" height="30" src="assets/images/icon-kalb.webp" srcset="assets/images/icon-kalb.webp 2x" alt="">Kalb <i class="fa-light fa-angle-right"></i></a></li>
+                                    <li><a href="#"><img width="43" height="30" src="assets/images/icon-lamm.webp" srcset="assets/images/icon-lamm.webp 2x" alt="">Lamm <i class="fa-light fa-angle-right"></i></a></li>
+                                    <li><a href="#"><img width="43" height="30" src="assets/images/icon-wild.webp" srcset="assets/images/icon-wild.webp 2x" alt="">Wild <i class="fa-light fa-angle-right"></i></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                     <ul class="menu menu-hover flex justify-between w-full">
                          <li class="have-sub-menu">
                              <a href="#">Fleisch <i class="fa-light fa-angle-down"></i></a>
                              <ul class="sub-menu">
@@ -246,7 +250,7 @@
       </section>
       <!-- End Slider -->
 
-      <section class="bg-secondary py-3 md:py-8">
+      <div class="bg-secondary py-3 md:py-8">
         <div class="container">
             <div class="grid grid-cols-3 gap-2 md:gap-3">
                 <div class="bg-[#0f0f0f] py-[20px] md:py-[50px] ps-2 md:ps-8 pe-2 md:pe-5 flex items-center gap-5 flex-col lg:flex-row">
@@ -285,7 +289,9 @@
                   
             </div>
         </div>
-      </section>
+    </div>
+
+    <!-- New Arrivals -->
       <section class="bg-secondary pb-8 ">
         <div class="bg-[#0f0f0f] max-w-[1509px] mx-auto lg:px-20 md:px-10 px-4 md:pt-14 md:pb-12 py-8">
             <div class="flex items-center lg:gap-20 gap-10 flex-wrap">
@@ -335,6 +341,9 @@
             </div>
         </div>
       </section>
+      <!-- New Arrivals -->
+
+      <!-- Featured Categories -->
       <section class="bg-secondary md:pt-2 pt-0 pb-12 px-0 md:px-10 lg:px-0">
         <div class="container">
             <h2 class="md:text-[40px] text-3xl font-semibold uppercase leading-tight text-white  text-center">FEATURED CATEGORIES</h2>
@@ -378,6 +387,9 @@
             </div>
         </div>
       </section>
+      <!-- End Featured Categories -->
+
+      <!-- Categories -->
       <section class="md:pt-16 md:pb-[72px] py-10 bg-no-repeat bg-cover relative" style="background-image:url('../src/assets/images/featured-bg.webp')">
         <div class="bg-secondary opacity-60 absolute w-full top-0 bottom-0 left-0 right-0"></div>
         <div class="container">
@@ -434,11 +446,15 @@
               </div>
         </div>
       </section>
+      <!-- End Categories -->
+
+      <!-- Products -->
       <section class="bg-secondary md:pt-[52px] pt-10 md:pb-16 pb-10">
             <div class="xl:max-w-[1508px] bg-no-repeat bg-cover lg:py-16 py-10 lg:px-20 md:px-10 px-4 mx-auto" style="background-image:url('../src/assets/images/wood-bg.webp')">
                 <h2 class="md:text-[40px] text-3xl font-semibold uppercase leading-tight text-white  text-center">FEATURED PRODUCTS</h2>
                 <div class="grid md:mt-16 mt-10 xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 rowGap">
 
+                    <!-- Product Col -->
                     <div class="bg-[#0f0f0f] relative">
                         <a href="#" class="block overflow-hidden w-full">
                             <img width="325" height="216" src="assets/images/featured-product-1.webp" srcset="assets/images/featured-product-1@2x.webp 2x" alt="featured" class="w-full max-h-[216px] h-full object-cover transition-all duration-200 ease-in hover:scale-105">
@@ -465,6 +481,8 @@
                             </a>
                         </div>
                     </div>
+                    <!-- End Product Col -->
+
                     <div class="bg-[#0f0f0f] relative">
                         <a href="#" class="block overflow-hidden w-full">
                             <img width="325" height="216" src="assets/images/featured-product-2.webp" srcset="assets/images/featured-product-2@2x.webp 2x" alt="featured" class="w-full max-h-[216px] h-full object-cover transition-all duration-200 ease-in hover:scale-105">
@@ -651,7 +669,10 @@
                     
                 </div>
             </div>
-      </section>   
+      </section>
+      <!-- End Products -->   
+
+      <!-- About -->
       <section class="bg-secondary border-t-2 border-solid border-primary">
         <div class="container">
             <div class="flex items-center gap-10 lg:flex-nowrap flex-wrap lg:flex-row flex-col-reverse">
@@ -671,7 +692,9 @@
             </div>
         </div>
       </section>
+      <!-- End About -->
 
+      <!-- Newsletter -->
       <section class="bg-secondary border-t-2 border-solid border-primary">
         <div class="container">
             <div class="flex items-center lg:gap-10 lg:flex-nowrap flex-wrap">
@@ -697,7 +720,9 @@
             </div>
         </div>
       </section>
+      <!-- End Newsletter -->
 
+      <!-- Reviews -->
       <section class="bg-secondary border-t-2 border-solid border-primary py-14">
         <div class="container">
             <h2 class="md:text-[40px] text-3xl font-semibold uppercase leading-tight text-white text-center">Customer Review</h2>
@@ -763,7 +788,9 @@
             </div>
         </div>
       </section>
+      <!-- End Reviews -->
 
+      <!-- Latest News -->
       <section class="bg-secondary border-t-2 border-solid border-primary py-14">
         <div class="container">
             <h2 class="md:text-[40px] text-3xl font-semibold uppercase leading-tight text-white text-center">OUR LATEST NEWS</h2>
@@ -861,7 +888,9 @@
             </div>
         </div>
       </section>
+      <!-- End Latest News -->
 
+      <!-- Footer -->
       <footer>
         <div class=" bg-[#0f0f0f] pt-[38px] pb-12">
            <div class="container">
@@ -958,7 +987,7 @@
             <p class="text-center text-white text-sm font-normal leading-none px-4">GOURMET CUT CLUB © 2023 PREMIUM MEAT-SELLING WEBSHOP</p>
         </div>
      </footer>
-
+     <!-- End Footer -->
 
      <!-- Shopping-Cart -->
      <div class="shopping-cart bg-[#0f0f0f] pt-14 pb-12">
@@ -1048,14 +1077,14 @@
             });
 
 
-            $('.categories').hover(
-                function(){ $(this).addClass('hover') },
-                function(){ $(this).removeClass('hover') }
-            );
+            $(".have-sub-menu.categories").click(function(){
+                 $(this).toggleClass("active");
+            });
 
             $(".shopping-btn").click(function(){
                  $("body").toggleClass("cart-active");
             });
+
             $(".shopping-cart .close").click(function(){
                  $("body").removeClass("cart-active");
             });
