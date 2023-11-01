@@ -136,8 +136,8 @@
     @apply text-white md:text-base lg:text-xl xl:text-2xl font-bold py-1 pl-6 pr-[52px] border-2 border-[#414141] border-t-0 flex items-center bg-transparent whitespace-nowrap  md:min-h-[42px] lg:min-h-[62px];
   }
 
-  .menu li.categories .sub-menu li a {
-    @apply pl-2;
+  .menu li.categories > .sub-menu > li > a {
+    @apply pl-2 lg:pl-6;
   }
 
   .menu .sub-menu li a i {
