@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
-
 @layer base {
   .container {
     @apply xl:max-w-[1364px] !important;
@@ -16,11 +14,9 @@
   body {
     font-family: "Poppins", sans-serif;
   }
-
 }
 
 @layer components {
-
   .arrow-Style .slick-arrow {
     @apply p-5 md:p-7 m-0 bg-[#333333] text-[0px] absolute top-[55%] md:top-[40%] translate-y-[-50%] z-10;
   }
@@ -42,28 +38,28 @@
     @apply flex items-center md:flex-row flex-col gap-8 justify-end !important;
   }
   .btn {
-    @apply border-primary border-[3px] border-solid px-4 py-3 inline-block text-[20px] text-white font-semibold relative overflow-hidden transition-all duration-200 ease-in;
+    @apply border-primary border-[3px] border-solid px-4 py-3 inline-block text-[20px] text-white font-semibold relative overflow-hidden;
   }
   .btn:hover {
     @apply bg-primary;
   }
   .btn2 {
-    @apply text-lg font-medium text-white px-[38px] py-[13.5px] bg-primary inline-block leading-none transition-all duration-200 ease-linear border-primary border-[3px] border-solid;
+    @apply text-lg font-medium text-white px-[38px] py-[13.5px] bg-primary inline-block leading-none  border-primary border-[3px] border-solid;
   }
   .btn.style2 {
-    @apply border-primary border-[3px] border-solid px-[38px] leading-none py-[13.5px] inline-block text-lg text-white font-semibold relative overflow-hidden transition-all duration-200 ease-in;
+    @apply border-primary border-[3px] border-solid px-[38px] leading-none py-[13.5px] inline-block text-lg text-white font-semibold relative overflow-hidden;
   }
   .btn2:hover {
     @apply bg-transparent;
   }
 
-  .banner-slider .slick-dots {
+  .slick-dots {
     @apply hidden md:flex flex-row items-center justify-center list-none gap-4 mt-10 absolute md:relative opacity-0 md:opacity-100;
   }
-  .banner-slider .slick-dots button {
+  .slick-dots button {
     @apply text-[0px] p-[6px] rounded-full border-white border-[3px] border-solid bg-transparent;
   }
-  .banner-slider .slick-dots .slick-active button {
+  .slick-dots .slick-active button {
     @apply bg-white;
   }
   .navTabs a {
@@ -105,7 +101,7 @@
     @apply bg-primary border-x-2 border-[#414141] text-center justify-center cursor-pointer;
   }
 
-  .categories-nav .categories > ul.sub-menu{
+  .categories-nav .categories > ul.sub-menu {
     @apply -left-[2px] -right-[2px];
   }
 
@@ -115,7 +111,7 @@
   }
 
   .menu .sub-menu {
-    @apply opacity-0 invisible transition-all ease-in-out delay-150 absolute z-10 flex flex-col grid-cols-1 bg-black top-[50px] lg:top-[54px] xl:top-[58px]
+    @apply opacity-0 invisible transition-all ease-in-out delay-150 absolute z-10 flex flex-col grid-cols-1 bg-black top-[50px] lg:top-[54px] xl:top-[58px];
   }
 
   .menu-hover > li:hover .sub-menu {
@@ -126,7 +122,6 @@
     @apply visible opacity-100;
   }
 
-
   /* Sub nav - Level 1 */
   .menu .sub-menu li {
     @apply relative;
@@ -136,19 +131,19 @@
     @apply text-white md:text-base lg:text-xl xl:text-2xl font-bold py-1 pl-6 pr-[52px] border-2 border-[#414141] border-t-0 flex items-center bg-transparent whitespace-nowrap  md:min-h-[42px] lg:min-h-[62px];
   }
 
-  .menu li.categories > .sub-menu > li > a {
+  .categories > .sub-menu > li > a {
     @apply pl-2 lg:pl-6;
   }
 
-  .menu .sub-menu li a i {
+  .sub-menu i {
     @apply absolute right-6 pl-7;
   }
 
-  .menu .sub-menu li a img {
-    @apply mr-4 w-7 lg:w-auto;
+  .sub-menu img {
+    @apply mr-4 w-7 lg:w-[43px];
   }
 
-  .menu .sub-menu li a:hover {
+  .sub-menu li a:hover {
     @apply bg-primary;
   }
 
@@ -162,33 +157,93 @@
     @apply visible opacity-100;
   }
 
-  .menu > li > ul.sub-menu > li:first-child:hover > .sub-menu {
-  }
-
   /* Mobile Nav */
   header.active .humburger {
     @apply relative transition-all duration-300 ease-linear;
   }
 
-  header.active .humburger span:nth-child(2) {
-    @apply opacity-0;
-  }
-
-  header.active .humburger span:nth-child(1) {
-    @apply rotate-45 relative top-[13px];
-  }
-  header.active .humburger span:nth-child(3) {
-    @apply -rotate-45 relative -top-[13px];
-  }
-
-  
-/* Shopping Cart */
+  /* Shopping Cart */
 
   .shopping-cart {
-    @apply fixed top-0 -left-full right-0 w-full transition-all duration-300 z-10 overflow-auto h-[100vh] 
+    @apply fixed top-0 -left-full right-0 w-full transition-all duration-300 z-10 overflow-auto h-[100vh];
   }
 
   body.cart-active .shopping-cart {
     @apply left-0;
   }
+
+  .banner-slider-wrapper {
+    @apply bg-[url('/src/assets/images/black-wood-mobile.webp')] md:bg-[url('/src/assets/images/black-wood.webp')]  bg-no-repeat bg-cover;
+  }
+  
+  .banner-slider > .slider-item{
+    @apply hidden !important;
+  }
+    
+  .banner-slider > .slider-item:first-child{
+    @apply flex !important;
+  }
+
+
+  /* Mobile Product Slider  */
+  .mobileSlider ul.slick-dots {
+    @apply flex items-center justify-center w-full absolute -bottom-14 opacity-100 m-0 !important;
+  }
+  .mobileSlider .slick-dots button {
+    @apply border-2 p-1 !important;
+  }
+
+  /* Mobile Menu */
+  .mobile-nav {
+    @apply fixed py-10 overflow-auto top-0 px-6 left-0 right-0 h-[100vh] bg-[#0f0f0f] z-20 -translate-x-[100%] transition-transform duration-500;
+    backface-visibility: hidden;
+  }
+
+  .mobile-nav.is-visible {
+    @apply transform-none;
+  }
+
+  .menu-wrapper {
+    @apply relative min-h-[60vh] 
+  }
+
+  .list-wrapper {
+    @apply overflow-x-auto;
+  }
+
+  .page-header .list-wrapper {
+    @apply absolute top-10 left-0 right-0 translate-x-[-100%] transition-transform duration-500 opacity-0;
+    backface-visibility: hidden;
+  }
+
+  .page-header .list-wrapper.is-visible {
+    @apply transform-none opacity-100;
+  }
+
+  .page-header .list-wrapper:nth-child(1) > ul > li > .sub-menu,
+  .page-header .list-wrapper:nth-child(2) .level-3,
+  .page-header .list-wrapper:nth-child(3) .level-4 {
+    @apply hidden;
+  }
+
+  .menu-wrapper a {
+    @apply text-white text-base font-normal py-3 pr-6 whitespace-nowrap block w-full;
+  }
+
+  .menu-wrapper a:hover{
+    @apply bg-transparent !important;
+  }
+
+  .menu-wrapper a.nested{
+    @apply text-2xl font-semibold text-white leading-none relative
+  }
+  .menu-wrapper ul li:has(ul) a:before{
+    @apply content-["\f105"] block absolute right-0 w-4 h-3 text-lg;
+    font-family: 'Font Awesome 6 Pro';
+  }
+
+  header:has(.is-visible.first-item) .back-one-level{
+    @apply hidden
+  }
+
 }

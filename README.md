@@ -1,2 +1,1 @@
-# GCC
- 
+# GCC-landing-page
